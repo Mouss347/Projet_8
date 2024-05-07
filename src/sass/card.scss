@@ -1,0 +1,146 @@
+.container_logement {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .picture_slide {
+    
+        img {
+            width: 1240px;
+            height: 415px;
+            display: flex;
+            object-fit: cover;
+            border-radius: 20px;
+        }
+
+        }
+        
+        .container_txt{
+            position: relative;
+
+
+            .content_card {
+                display: flex;
+                justify-content: space-between;
+
+                h1 {
+        
+                    font-family: "Montserrat";
+                    font-size: 40px;
+                    font-weight: 500;
+                    color: #FF6060;
+                    margin: 30px 0px 0px 0px;
+            
+                }
+        
+                h2 {
+                    font-family: "Montserrat";
+                    font-size: 20px;
+                    font-weight: 500;
+                    color: black;
+                    
+                }
+
+                .content_presentation {
+
+                    .content_tag {
+                        display: flex;
+                        gap: 10px;
+                        justify-content: flex-start;
+
+                        .tag {
+                            padding: 7px 30px;
+                            margin-top: 20px;
+                            border-radius: 25px;
+                            color: white;
+                            background-color: #FF6060;
+                            font-family: "montserrat";
+                        }
+                    }                    
+                }
+                
+                .content_hote {
+
+                    .hote {
+                        
+                        display: flex;
+                        margin-top: 30px;
+    
+                        .img_hote {
+                            border-radius: 50%;
+                            object-fit: cover;
+                            height: 64px;
+                            width: 64px;
+                        }
+    
+                        h3 {
+                            font-size: 18px;
+                            font-family: "Montserrat";
+                            font-weight: 500;
+                            line-height: 150%;
+                            margin-right: 10px;
+                            text-align: right;
+                            width: 93px;
+                            color: #FF6060;
+                        }
+    
+                    }
+
+                    .stars {
+                        margin-top: 20px;
+                        align-items: end;
+
+                        img {
+                            margin-left: 10px;
+                        }
+                    }
+                }
+            }
+
+        .picture_nav {
+            display: flex;
+            align-items: center;
+            position: absolute;
+            width: 1240px;
+            height: 415px;
+            
+            p {
+                position: absolute;
+                bottom: 0;
+                margin: 20px;
+                color: white;
+                font-size: 20;
+                font-family: "Montserrat", sans-serif;
+            }
+
+            .btn_next{
+                position: absolute;
+                right: 0;
+                width: 50px;
+                cursor: pointer;
+                margin: 10px;
+            }
+
+            .btn_prev {
+                position: absolute;
+                left: 0;
+                width: 50px;
+                cursor: pointer;
+                margin: 10px;
+            }
+        }
+    } 
+
+    .collapse_card {
+        width: 86%;
+        justify-content: space-between;
+        display: flex;
+       
+
+        .collapse {
+            width: 50%; 
+            margin-top: 20px;
+            display: block;
+        }
+    }
+}

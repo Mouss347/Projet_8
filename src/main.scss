@@ -5,10 +5,13 @@
 @use "./sass/error.scss";
 @use "./sass/about.scss";
 @use "./sass/thumb.scss";
+@use "./sass/collapse.scss";
+@use "./sass/card.scss";
 
 *{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    // box-sizing: border-box;
     justify-content: center;
+    max-width: 1440px;
 }
