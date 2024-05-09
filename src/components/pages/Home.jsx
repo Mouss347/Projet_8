@@ -10,8 +10,10 @@ const Home = () => {
           <h1>Chez vous, partout et ailleurs</h1>
         </div>
         <div className="gallery">
-          <Thumb cards = {cards}/> 
-          {/* transfere ma variable card dans une props card et je les transfere au composant thumb */}
+          <div className="gallery_background">
+            <Thumb cards = {cards}/> 
+            {/* transfere ma variable card dans une props card et je les transfere au composant thumb */}
+          </div>
         </div>
     </div>
   )

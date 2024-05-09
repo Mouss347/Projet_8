@@ -7,11 +7,19 @@
     flex-direction: column;
     align-items: center;
     gap: 30px;
-    margin-top: 40px;
 
     p {
         color : white;
         margin-top: 10px;
         font-family: Montserrat;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .footer {
+        padding: 50px;
+        p {
+            width: 150px;
+        }
     }
 }
