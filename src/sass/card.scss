@@ -45,15 +45,18 @@
                 }
 
                 .content_presentation {
-
+                    margin: 0;
                     .content_tag {
                         display: flex;
-                        gap: 10px;
+                        flex-wrap: wrap;
                         justify-content: flex-start;
 
                         .tag {
+                            height: 20px;
                             padding: 7px 30px;
                             margin-top: 20px;
+                            margin-left: 0;
+                            margin-right: 20px;
                             border-radius: 25px;
                             color: white;
                             background-color: #FF6060;
@@ -63,7 +66,7 @@
                 }
                 
                 .content_hote {
-
+                    margin: 0;
                     .hote {
                         
                         display: flex;
@@ -142,7 +145,8 @@
 
         .collapse {
             width: 40%; 
-            margin-top: 20px;
+            margin-left: 0;
+            margin-right: 0;
             display: block;
 
             p {
@@ -151,6 +155,15 @@
 
             .container_collapse {
                 width: 98%;
+                margin-right: 0;
+
+                .Button_collapse {
+                    margin-right: 0;
+                }
+                
+                h4 {
+                    margin-left: 0;
+                }
             }
         }
     }
@@ -177,6 +190,7 @@
                     .content_tag {
                         .tag {
                             font-size: 10px;
+                            height: 15px;
                         }
                     }
                 }
@@ -186,9 +200,11 @@
                     justify-content: space-between;
                     align-items: center;
                     .hote {
+                        margin-right: 0;
                         h3 {
                             font-size: 12px;
                             width: 45px;
+                            margin-right: 10px;
                         }
                         .img_hote {
                             height: 32px;
@@ -197,7 +213,8 @@
                     }
 
                     .stars {
-
+                        margin-bottom: 0;
+                        margin-left: 0;
                         img {
 
                             width: 13px;
@@ -210,10 +227,15 @@
         
                     .collapse_card {
                         display: block;
+                        width: 100%;
                         
                         .collapse {
-                            width: 96%;
+                            width: 100%;
                             .container_collapse {
+                                width: 98%;
+                                .Button_collapse {
+                                    // margin-right: 0;
+                                }
 
                                 h4 {
                                     font-size: 13px;
@@ -224,5 +246,31 @@
                             }
                         }
                     }
+    }
+}
+
+@media screen and (max-width: 630px){
+    .container_logement {
+.collapse_card {
+        width: 100%;
+        .collapse {
+            .container_collapse {
+                width: 97%;
+                margin-left: 0;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 500px){
+    .container_logement {
+        .collapse_card {
+            .collapse {
+                .container_collapse {
+                    width: 96%;
+                }
+            }
+        }
     }
 }

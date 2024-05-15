@@ -23,6 +23,17 @@
     .collapses {
         width: 80%;
         padding: 10px;
+
+        .collapse {
+            .container_collapse {
+                .Button_collapse {
+                    margin: 0;
+                }
+                h4 {
+                    margin: 0;
+                }
+            }
+        }
     }
 }
 
@@ -38,15 +49,19 @@
             
         }
         .collapses {
-            width: 100%;
+            width: 93%;
             display: flex;
             flex-direction: column;
             justify-content: center;
-            align-items: center;
+            align-items: baseline;
+            max-width: 1440px;
             .collapse {
-                width: 90%;
+                width: 100%;
+                margin: 0;
+                justify-content: center;
                 .container_collapse {
-                    width: 100%;
+                    width: 98%;
+                    margin: 20px 0 0 0;
                     h4 {
                         font-size: 13px;
                     }
@@ -60,3 +75,9 @@
         }
     }
 }
+
+// @media screen and (max-width: 640px) {
+//     .container_collapse {
+//         width: 91%;
+//     }
+// }
