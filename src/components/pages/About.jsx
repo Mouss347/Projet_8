@@ -11,7 +11,7 @@ const About = () => {
 
   <div className="collapses">
     <Collapse title="Fiabilité" 
-      paragraphe 
+      paragraphe
         = "Les annonces postées sur Kasa garantissent une fiabilité totale. Les photos sont conformes aux logements, et toutes les informations sont réguliérement vérifiées par nos équipes."/>
 
     <Collapse title="Respect" 

@@ -6,6 +6,7 @@ import About from "./pages/About";
 import Error from "./pages/Error";
 import Card from "./pages/Card";
 
+
 const App = () => {
   return (
     /*importation du composant BrowserRouter*/
